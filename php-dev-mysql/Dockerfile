@@ -1,4 +1,4 @@
-FROM php-fpm-dev
+FROM kusflo/docker-php:php-dev
 # Install mysql
 RUN apt-get update && apt-get install -y mysql-client \
 && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/* \
